@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    a=max(arr)
+    c=arr.count(a)
+    for i in range(c):
+      arr.remove(a)
+    print(max(arr))
+    
+Sample Input 0
+
+5
+2 3 6 6 5
+Sample Output 0
+
+5
+    
