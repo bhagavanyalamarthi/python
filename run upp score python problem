@@ -15,3 +15,11 @@ Sample Output 0
 
 5
     
+second modal
+
+code
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    a=max(arr)
+    print(arr[(arr.index(max(arr)))-1])
