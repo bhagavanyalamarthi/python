@@ -1,0 +1,21 @@
+def armstrong(n):
+
+ l = 1
+
+ while n % 10**l != n:
+
+ l += 1
+
+ res = 0
+
+ temp = n
+
+ while n > 0:
+
+ res += (n%10)**l
+
+ n //= 10
+
+ return res == temp
+
+ print(armstrong(int(input())))
