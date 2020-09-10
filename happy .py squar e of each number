@@ -1,0 +1,20 @@
+#for example given number=10  1**2+0**2=1+0=0 like that any digit num  squares of the each number and add all squares answers
+#until reached 1r 7 we r doing
+def happy(n):
+    square=0
+    for i in range(1,n+1):
+       rem = n%10
+       square+=rem**2
+       n//=10
+    return (square)
+    if n==1 or n==7:
+         print("kk")
+        
+    else:
+        print("no")
+n=int(input("enter a number"))
+print(happy(n))
+      
+    
+        
+        
